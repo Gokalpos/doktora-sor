@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "38813164467",
+    "firebase_url": "https://doktorasorr-75ae7.firebaseio.com",
+    "project_id": "doktorasorr-75ae7",
+    "storage_bucket": "doktorasorr-75ae7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38813164467:android:e4def51a8cec9a988421c6",
+        "android_client_info": {
+          "package_name": "com.example.doktorasorr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "38813164467-gjfm3qnh2ashgrgk04g6e1ltk8enteuj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.doktorasorr",
+            "certificate_hash": "afd2c1343b14e42fb640b3a42825392039b36416"
+          }
+        },
+        {
+          "client_id": "38813164467-tp9jq0gkk90ks41odmncbrdpef7fqudo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhSWBikp8NToULgK2DHwuovtzyN6REKzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "38813164467-tp9jq0gkk90ks41odmncbrdpef7fqudo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

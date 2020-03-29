@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/giris_resmi"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/login_photo"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"/>
+
+                <EditText
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/giris_email"
+                    android:layout_below="@id/giris_resmi"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/girdiler"
+                    android:hint="Email"
+                    android:textSize="24sp"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp"
+                    android:drawableStart="@drawable/ic_email_black_24dp"
+                />
+
+            <EditText
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/giris_sifre"
+                android:layout_below="@id/giris_email"
+                android:layout_alignParentStart="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/girdiler"
+                android:hint="Sifre"
+                android:textSize="24sp"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:drawableStart="@drawable/ic_lock_black_24dp"
+                />
+
+                <Button
+                    android:id="@+id/giris_butonu"
+                    android:layout_below="@id/giris_sifre"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonlar"
+                    android:padding="8dp"
+                    android:text="Giris Yap"
+                    android:textAllCaps="false"
+                    android:textSize="25sp"
+                    android:textColor="@color/cardview_light_background"
+                    />
+
+
+            <TextView
+                android:id="@+id/sifre_unutma_baglantisi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/giris_butonu"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:padding="8dp"
+                android:text="Sifreni mi unuttun?"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+
+                />
+
+            <TextView
+                android:id="@+id/yeni_hesap_alma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sifre_unutma_baglantisi"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:padding="8dp"
+                android:text="Hesabın mı yok?"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+
+                />
+
+            <TextView
+                android:id="@+id/kullanarak_giris"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/yeni_hesap_alma"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:padding="8dp"
+                android:text="Ya da şu şekilde giriş yapın"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+
+                />
+
+            <Button
+                android:id="@+id/telefonla_giris_butonu"
+                android:layout_below="@id/kullanarak_giris"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonlar"
+                android:padding="8dp"
+                android:text="Telefonla Giris Yap"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="@color/cardview_light_background"
+                android:drawableStart="@drawable/ic_phone_iphone_black_24dp"
+
+
+                />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
