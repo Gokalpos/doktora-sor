@@ -133,6 +133,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         super.onOptionsItemSelected(item);
         if(item.getItemId()==R.id.ana_doktor_bulma_secenegi){
+            Intent doktorBul = new Intent(MainActivity.this,DoktorBulActivity.class);
+            startActivity(doktorBul);
 
 
 
