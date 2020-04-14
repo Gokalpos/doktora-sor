@@ -93,7 +93,7 @@ public class AyarlarActivity extends AppCompatActivity {
             }
         });
 
-        kullaniciDurumu.setVisibility(View.INVISIBLE);
+        kullaniciDurumu.setVisibility(View.VISIBLE);
 
         KullaniciBilgisiAl();
 

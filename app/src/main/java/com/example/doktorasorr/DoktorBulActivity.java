@@ -6,6 +6,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -61,10 +62,22 @@ public class DoktorBulActivity extends AppCompatActivity {
 
         FirebaseRecyclerAdapter<Kisiler,DoktorBulViewHolder> adapter = new FirebaseRecyclerAdapter<Kisiler, DoktorBulViewHolder>(secenekler) {
             @Override
-            protected void onBindViewHolder(@NonNull DoktorBulViewHolder holder, int position, @NonNull Kisiler model) {
+            protected void onBindViewHolder(@NonNull DoktorBulViewHolder holder, final int position, @NonNull Kisiler model) {
                 holder.kullaniciAdi.setText(model.getAd());
                 holder.kullaniciDurumu.setText(model.getDurum());
                 Picasso.get().load(model.getResim()).into(holder.profilResmi);
+
+                //Tıklama işlemi
+                holder.itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        String tıklanan_kullanici_id_goster = getRef(position).getKey();
+                        Intent profilAktivite = new Intent(DoktorBulActivity.this,ProfilActivity.class);
+                        profilAktivite.putExtra("tıklanan_kullanici_id_goster",tıklanan_kullanici_id_goster );//gonderme
+                        startActivity(profilAktivite);
+
+                    }
+                });
 
             }
 
