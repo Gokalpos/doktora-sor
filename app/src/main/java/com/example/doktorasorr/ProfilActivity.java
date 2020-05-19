@@ -49,7 +49,7 @@ public class ProfilActivity extends AppCompatActivity {
 
         KullaniciYolu.child(alinanKullaniciId).addValueEventListener(new ValueEventListener() {//veri cekme
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {//Veritemsil
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {//Veritemsili
                if((dataSnapshot.exists()) && (dataSnapshot.hasChild("resim"))){
                    String kullaniciResmi = dataSnapshot.child("resim").getValue().toString();
                    String kullaniciAdi = dataSnapshot.child("ad").getValue().toString();
