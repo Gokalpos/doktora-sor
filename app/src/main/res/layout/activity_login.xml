@@ -112,44 +112,6 @@
 
                 />
 
-            <TextView
-                android:id="@+id/kullanarak_giris"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/yeni_hesap_alma"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="15dp"
-                android:padding="8dp"
-                android:text="Ya da şu şekilde giriş yapın"
-                android:textColor="@color/colorPrimary"
-                android:textSize="12sp"
-                android:textStyle="bold"
-                android:textAlignment="center"
-
-                />
-
-            <Button
-                android:id="@+id/telefonla_giris_butonu"
-                android:layout_below="@id/kullanarak_giris"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/buttonlar"
-                android:padding="8dp"
-                android:text="Telefonla Giris Yap"
-                android:textAllCaps="false"
-                android:textSize="16sp"
-                android:textColor="@color/cardview_light_background"
-                android:drawableStart="@drawable/ic_phone_iphone_black_24dp"
-
-
-                />
-
-
 
         </RelativeLayout>
     </ScrollView>

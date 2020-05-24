@@ -12,6 +12,6 @@
         android:textSize="26sp"
         android:textStyle="bold"
         android:layout_centerInParent="true"
-        android:text="Doktorlar Çerçevesi" />
+        android:text="" />
 
 </RelativeLayout>

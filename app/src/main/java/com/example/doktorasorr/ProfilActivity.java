@@ -4,11 +4,16 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.PlayGamesAuthCredential;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -39,7 +44,9 @@ public class ProfilActivity extends AppCompatActivity {
         kullaniciprofiladi = findViewById(R.id.kullanici_adı_ziyaret);
         kullaniciprofildurumu = findViewById(R.id.kullanici_profil_durumu_ziyaret);
 
+
         KullaniciYolu = FirebaseDatabase.getInstance().getReference().child("Kullanicilar");
+
 
         kullaniciBilgisiAl();
 
@@ -60,6 +67,8 @@ public class ProfilActivity extends AppCompatActivity {
                    kullaniciprofildurumu.setText(kullaniciDurumu);
 
 
+
+
                }
                else{
                    String kullaniciAdi = dataSnapshot.child("ad").getValue().toString();
@@ -67,6 +76,7 @@ public class ProfilActivity extends AppCompatActivity {
 
                    kullaniciprofiladi.setText(kullaniciAdi);
                    kullaniciprofildurumu.setText(kullaniciDurumu);
+
 
                }
 
@@ -84,4 +94,10 @@ public class ProfilActivity extends AppCompatActivity {
         });
 
     }
+
+
+
+
+
+
 }

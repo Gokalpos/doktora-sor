@@ -39,7 +39,6 @@ public class LoginActivity extends AppCompatActivity {
         //Kontrol Tanımlamaları
 
         girisButonu=findViewById(R.id.giris_butonu);
-        telefonlaGirisButonu=findViewById(R.id.telefonla_giris_butonu);
 
         KullaniciMail=findViewById(R.id.giris_email);
         KullaniciSifre=findViewById(R.id.giris_sifre);
