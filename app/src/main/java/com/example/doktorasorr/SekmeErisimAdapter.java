@@ -17,12 +17,13 @@ public class SekmeErisimAdapter extends FragmentPagerAdapter {
         switch(position)
         {
             case 0:
-                ChatsFragment chatsFragment = new ChatsFragment();
-                return chatsFragment;
-
-            case 1:
                 GruplarFragment gruplarFragment = new GruplarFragment();
                 return gruplarFragment;
+
+            case 1:
+
+            ChatsFragment chatsFragment = new ChatsFragment();
+            return chatsFragment;
 
             case 2:
                 DoktorlarFragment doktorlarFragment = new DoktorlarFragment();
@@ -52,13 +53,13 @@ public class SekmeErisimAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return "Sorular";
-
-            case 1:
                 return "Gruplar";
 
+            case 1:
+                return "";
+
             case 2:
-                return "Doktorlar";
+                return "";
 
             default:
                 return null;
